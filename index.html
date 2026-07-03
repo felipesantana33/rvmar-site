@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="description" content="RVmar — plataforma científica de referenciais verticais marítimos." />
+    <title>RVmar — Referenciais Verticais Marítimos</title>
+    <link rel="stylesheet" href="public.css?v=review-1" />
+  </head>
+  <body>
+    <main id="public-shell">
+      <header class="masthead">
+        <a class="brand" href="#top" aria-label="RVmar — início">
+          <span>RVmar</span>
+          <small>Referenciais Verticais Marítimos</small>
+        </a>
+        <button class="access-link" type="button" data-open-login>Acesso restrito</button>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Pesquisa científica · Baía de Guanabara</p>
+          <h1>Uma infraestrutura para integrar referenciais verticais marítimos.</h1>
+          <p class="lead">O RVmar é uma plataforma científica dedicada à transformação e à consulta de referenciais verticais marítimos, geodésicos e elipsoidais.</p>
+          <p class="review-note">A metodologia e a aplicação completa integram um manuscrito atualmente em revisão por pares. O acesso técnico está temporariamente restrito.</p>
+          <button class="primary" type="button" data-open-login>Entrar na aplicação</button>
+        </div>
+        <div class="abstract-map" aria-label="Representação abstrata da Baía de Guanabara">
+          <div class="grid"></div>
+          <span class="bay-label">BAÍA DE<br />GUANABARA</span>
+          <span class="point point-a"></span><span class="point point-b"></span><span class="point point-c"></span>
+        </div>
+      </section>
+
+      <section class="scope" aria-labelledby="scope-title">
+        <p class="section-index">01</p>
+        <div>
+          <p class="eyebrow">Escopo do projeto</p>
+          <h2 id="scope-title">Referenciais em uma mesma interface cartográfica</h2>
+        </div>
+        <p>A plataforma foi concebida para apoiar estudos e aplicações envolvendo referenciais maregráficos, o datum vertical brasileiro e superfícies relacionadas ao elipsoide.</p>
+      </section>
+
+      <footer>
+        <span>RVmar.com.br</span>
+        <span>Conteúdo técnico restrito durante a revisão editorial</span>
+      </footer>
+    </main>
+
+    <dialog id="login-dialog" aria-labelledby="login-title">
+      <form id="login-form">
+        <button class="close" type="button" data-close-login aria-label="Fechar">×</button>
+        <p class="eyebrow">Área privada</p>
+        <h2 id="login-title">Acessar aplicação completa</h2>
+        <p class="login-help">Informe as credenciais de acesso à versão técnica.</p>
+        <label>Login<input id="login" name="login" autocomplete="username" required /></label>
+        <label>Senha<input id="password" name="password" type="password" autocomplete="current-password" required /></label>
+        <button class="primary" type="submit">Entrar</button>
+        <p id="login-status" class="status" role="alert" aria-live="polite"></p>
+      </form>
+    </dialog>
+
+    <section id="private-shell" hidden aria-label="Aplicação RVmar completa">
+      <div class="private-bar"><strong>RVmar · acesso privado</strong><button id="logout" type="button">Sair</button></div>
+      <iframe id="private-app" title="Aplicação completa RVmar" sandbox="allow-scripts allow-downloads allow-forms allow-modals allow-same-origin"></iframe>
+    </section>
+    <script src="auth.js?v=review-1"></script>
+  </body>
+</html>
